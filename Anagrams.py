@@ -7,8 +7,8 @@ for i in s1:
     if i not in s2:
         f=1
         break
-if(f==0):
+if f==0:
     print('True')
 else:
     print('False')
-    
+        
