@@ -1,4 +1,4 @@
 s=input()
-word=s.split()
-st=word[-1]
-print(st[0])
+s=s.split()
+a=s[-1]
+print(a[0])
