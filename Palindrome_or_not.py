@@ -1,8 +1,6 @@
-a_string=input()
-def palindrome(string):
-    string=string.lower()
-    return string==string[::-1]
-if(palindrome(a_string)):
+a=input()
+a=a.lower()
+if(a==a[::-1]):
     print('True')
 else:
     print('False')
