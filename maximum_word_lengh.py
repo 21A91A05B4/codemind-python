@@ -1,8 +1,9 @@
 s=input()
 d=[]
-a=[]
 for i in s.split():
     d.append(i)
+max=0
 for i in d:
-    a.append(len(i))
-print(max(a))
+    if len(i)>max:
+        max=len(i)
+print(max)
