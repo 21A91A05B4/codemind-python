@@ -1,16 +1,16 @@
 s=input()
 a='aeiouAEIOU'
-b=[]
 c=0
+b=[]
 for i in s:
     if i in a:
-        c+=1
         b.append(i)
-if(c==0):
-    print('-1')
+        c+=1
+if c==0:
+    print(-1)
 else:
-    l=[]
+    d=[]
     for i in b:
-        if i not in l:
-            l.append(i)
-    print(*l)
+       if i not in d:
+           d.append(i)
+    print(*d)
