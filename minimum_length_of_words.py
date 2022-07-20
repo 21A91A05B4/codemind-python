@@ -1,8 +1,9 @@
 s=input()
 d=[]
-a=[]
 for i in s.split():
     d.append(i)
+min=999
 for i in d:
-    a.append(len(i))
-print(min(a))
+    if len(i)<min:
+        min=len(i)
+print(min)
