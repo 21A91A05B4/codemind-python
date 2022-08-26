@@ -1,25 +1,22 @@
 n=int(input())
-a=list(map(int,input().split()))
-min=9999
-for i in a:
-    if(i<min):
-        min=i
-b=min
-f=0
-c=0
-while(b):
-    r=b%10
-    b=b//10
-    c+=1
-for i in range(len(a)):
+l=list(map(int,input().split()))
+min=999
+c=1
+dc=0
+f=[]
+for i in l:
     dc=0
-    while(a[i]):
-        d=a[i]%10
-        a[i]=a[i]//10
+    while(i):
+        r=i%10
+        i=i//10
         dc+=1
-    if(dc==c):
-        f+=1
-    i+=1
-print(f)
-        
-    
+    f.append(dc)
+f.sort()
+for i in f:
+    if (i<min):
+        min=i
+    elif (i==min):
+        c+=1
+    else:
+        continue
+print(c)
