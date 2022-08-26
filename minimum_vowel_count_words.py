@@ -1,23 +1,29 @@
 s=input()
-a='aeiouAEIOU'
-d=[]
-for i in s.split():
-    d.append(i)
-min=999
-for i in d:
-    c=0
-    for j in i:
-        if j in a:
+s=s.split()
+b=[]
+f=[]
+l=''
+c=0
+a=0
+for i in s:
+    b.append(i)
+v='aeiouAEIOU'
+for i in b:
+    l=i
+    #print(l)
+    for j in l:
+        if j in v:
             c+=1
-    if c<min:
-        min=c
-s=0
-for i in d:
-    m=0
-    for j in i:
-        if j in a:
-            m+=1
-    if m==min:
-        s+=1
-print(s)
-            
+    f.append(c)
+    c=0
+    l=''
+#print(f)
+w=min(f)
+z=0
+i=0
+for i in f:
+    if i==w:
+        z+=1
+print(z)
+    
+    
