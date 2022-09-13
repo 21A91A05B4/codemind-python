@@ -1,9 +1,13 @@
 s=input()
 s=s.lower()
-d=[]
+b=[]
 for i in s:
     if i==' ':
         continue
-    d.append(i)
-d=set(d)
-print(len(d))
+    if ord(i) not in b:
+        b.append(ord(i))
+b.sort()
+c=0
+for i in b:
+    c+=1
+print(c)
