@@ -1,9 +1,11 @@
 s=input()
-s=s.lower()
-f=0
-for i in s:
+c=[]
+d=0
+m=s.lower()
+for i in m:
     if i==' ':
         continue
-    if(s.count(i)==1):
-        f+=1
-print(f)
+    if m.count(i)==1:
+        c.append(i)
+        d+=1
+print(d)
