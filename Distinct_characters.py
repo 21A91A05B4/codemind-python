@@ -1,16 +1,11 @@
 s=input()
 s=s.lower()
-d=[]
-e=[]
-v=[]
-f=0
+b=[]
 for i in s:
     if i==' ':
         continue
-    d.append(ord(i))
-e=set(d)
-for i in e:
-    v.append(i)
-v.sort()
-for i in v:
+    if s.count(i)==1:
+        b.append(ord(i))
+b.sort()
+for i in b:
     print(chr(i),end='')
