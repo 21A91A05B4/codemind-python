@@ -1,3 +1,4 @@
+
 s1=input()
 s2=input()
 s1=s1.lower()
@@ -18,4 +19,5 @@ for i in s2:
 b.sort()
 for i in b:
     print(chr(i),end='')
+    
     
