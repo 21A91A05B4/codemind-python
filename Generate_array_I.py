@@ -2,7 +2,7 @@ n=int(input())
 a=list(map(int,input().split()))
 b=[]
 c=[]
-for i in range(len(a)):
+for i in range(0,n):
     if(i%2!=0):
         b.append(a[i])
     else:
