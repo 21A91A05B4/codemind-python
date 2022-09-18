@@ -1,15 +1,13 @@
-n1,n2=map(int,input().split())
+n,m=map(int,input().split())
 a=list(map(int,input().split()))
 b=list(map(int,input().split()))
-e=[]
+c=[]
+d=[]
+s=0
 for i in a:
     if i not in b:
-        e.append(i)
+        c.append(i)
 for i in b:
-    if ((i not in a) and(i not in e)):
-        e.append(i)
-f=[]
-for i in e:
-    if i not in f:
-        f.append(i)
-print(*f)
+    if i not in a:
+        c.append(i)
+print(*c)
