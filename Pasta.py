@@ -1,8 +1,8 @@
-n1,n2=map(int,input().split())
+n,m=map(int,input().split())
 a=list(map(int,input().split()))
 b=list(map(int,input().split()))
 c=0
-if(n1<n2):
+if(n<m):
     print('No')
 else:
     for i in b:
@@ -12,4 +12,3 @@ else:
         print('No')
     else:
         print('Yes')
-    
